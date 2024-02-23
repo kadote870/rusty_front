@@ -2,7 +2,10 @@ import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 
 import {AppComponent} from './app.component';
-import {ServerComponent} from "./server/app.component";
+
+import {ServerComponent} from "./server/server.component";
+import {FormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
     declarations: [
@@ -10,7 +13,9 @@ import {ServerComponent} from "./server/app.component";
         ServerComponent
     ],
     imports: [
-        BrowserModule
+        BrowserModule,
+        FormsModule,
+        HttpClientModule
     ],
     providers: [],
     bootstrap: [AppComponent]
